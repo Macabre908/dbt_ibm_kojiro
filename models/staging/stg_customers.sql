@@ -1,0 +1,15 @@
+WITH CUSTOMERS AS (
+    SELECT 
+        C_CUSTKEY CUSTOMER_ID,
+        C_NAME NAME,
+        C_ADDRESS ADDRESS,
+        C_ACCTBAL ACCOUNT_BALANCE,
+        C_MKTSEGMENT MARKET_SEGMENT,
+        C_PHONE PHONE_NUMBER,
+        C_NATIONKEY NATION_ID,
+        C_COMMENT COMMENT
+    FROM
+        {{ source('src', 'customers') }}
+)
+
+SELECT * FROM CUSTOMERS
