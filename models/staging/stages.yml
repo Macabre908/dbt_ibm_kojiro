@@ -1,10 +1,12 @@
 models:
   - name: stg_nations
+    description: Table for nations data
     columns:
       - name: nation_id
+        description: Primary Key for nation's table
         data_tests:
           - unique
-          - not_null
+          - not_null 
   - name: stg_regions 
     columns:
       - name: name

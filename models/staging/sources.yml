@@ -18,4 +18,5 @@ sources:
             warn_after: {count: 6, period: day}
             error_after: {count: 12, period: day}
           loaded_at_field: l_commitdate::timestamp_ntz
+      - name: suppliers
             
